@@ -1,0 +1,24 @@
+---
+title: "Markdown example"
+author: "Zaynaib Giwa"
+date: "4/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown and R2D3
+
+You can embed D3 data visualizations in your R Markdown files or R Notebooks.
+This can be done by calling the ```r2d3()``` function within an R chunk.
+
+```{r}
+library(r2d3)
+r2d3(data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20), script = "barchart.js")
+```
+```{r}
+library(r2d3)
+r2d3(data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20), script = "barchart-options.js",options = list(color = "orange"))
+```
