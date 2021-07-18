@@ -12,7 +12,7 @@ const yAccessor = function(d){
 
 //Step 2 Create Chart dimensions
 
-var margin = {top: 30, right: 30, bottom: 70, left: 60}
+var margin = {top: 30, right: 30, bottom: 70, left: 60};
 var width = width - margin.left - margin.right;
 var height = height - margin.top - margin.bottom;
 

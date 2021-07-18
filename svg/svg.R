@@ -9,24 +9,28 @@
 # The example belows shows you how to append a svg element in d3
 
 
-#load the r2d3 pacakge library
+#load the r2d3 package library
 library(r2d3)
 
 #svg is automatically loaded with the package
 #The svg container for the visualization
 
-svg
-    .append("circle")
-    .attr("cx",190)
-    .attr("cy",80)
-    .attr("r",40)
-    .stroke("blue")
+// !preview r2d3 data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20)
+
+r2d3(data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20), script = "svg.js")
+
+# svg
+#     .append("circle")
+#     .attr("cx",190)
+#     .attr("cy",80)
+#     .attr("r",40)
+#     .stroke("blue")
 
 
-svg
-  .append("rect")
-  .attr("x", 100)
-  .attr("y", 100)
-  .attr("width", 100)
-  .attr("height", 100)
-  .attr("fill", "blue");
+# svg
+#   .append("rect")
+#   .attr("x", 100)
+#   .attr("y", 100)
+#   .attr("width", 100)
+#   .attr("height", 100)
+#   .attr("fill", "blue");

@@ -8,4 +8,4 @@ svg.selectAll('rect')
     .attr('width', function(d) { return d * width; })
     .attr('height', barHeight)
     .attr('y', function(d, i) { return i * barHeight; })
-    .attr('fill', 'pink');
+    //.attr('fill', 'pink');
