@@ -25,5 +25,5 @@
     .append("circle")
       .attr("cx", function (d) { return x(d.GrLivArea); } )
       .attr("cy", function (d) { return y(d.SalePrice); } )
-      .attr("r", 1.5)
+      .attr("r", 3.5)
       .style("fill", "#69b3a2")
