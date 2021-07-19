@@ -6,16 +6,35 @@
 
 //! This step is not need if you are using r2d3 svg is automatically created
 
-  // Add X axis
+  var margin = {top: 10, right: 30, bottom: 30, left: 60},
+    width = 860 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+   svg
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+
+      // Add X axis
   var x = d3.scaleLinear()
-    .domain([0, 4000])
-    .range([ 0, width ]);
+  .domain([0, 4000])
+  .range([ 0, width ]);
+svg.append("g")
+  .attr("transform", "translate(" + margin.left + "," + height + ")")
+  .call(d3.axisBottom(x));
 
+// Add Y axis
+var y = d3.scaleLinear()
+  .domain([0, 500000])
+  .range([ height, 0]);
+svg.append("g")
+.attr("transform", "translate(" + margin.left + ",0)")
 
-  // Add Y axis
-  var y = d3.scaleLinear()
-    .domain([0, 500000])
-    .range([ height, 0]);
+  .call(d3.axisLeft(y));
 
 
   // Add dots
