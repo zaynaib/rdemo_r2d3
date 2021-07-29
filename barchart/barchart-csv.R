@@ -1,4 +1,6 @@
 #Full tutorial
+library(r2d3)
+
 example_csv <- read.csv("ex.csv")
 View(example_csv)
 

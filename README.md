@@ -15,3 +15,9 @@ Dependencies need to run the R Scripts include :
 - r2D3 
 - jsonlite 
 
+## Resources to Learn D3.js
+
+[FullStack D3 and Data Visualization](https://www.newline.co/fullstack-d3)
+
+[D3.js Gallery](https://www.d3-graph-gallery.com/index.html)
+
